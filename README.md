@@ -17,8 +17,7 @@ Personal Knowledge Management
 
 ## Software Engineering
 
-### DesignPattern
- * [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP)
+### [DesignPattern](SoftwareEngineering/DesignPattern/README.md)
 
 ### Testing
 
@@ -30,7 +29,7 @@ Personal Knowledge Management
 
 ## Operating System
 
-### Linux
+### [Linux](OperatingSystem/Linux/README.md)
 
 ### Mac
 
