@@ -9,7 +9,7 @@ Personal Knowledge Management
 
 ### Python
 
-### Golang
+### [Golang](Programming/Golang/README.md)
 
 ### JavaScript
 
