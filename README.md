@@ -5,7 +5,7 @@ Personal Knowledge Management
 
 ## Programming
 
-## [Base](Programming/Base/README.md)
+### [Base](Programming/Base/README.md)
 
 ### PHP
 
@@ -28,6 +28,8 @@ Personal Knowledge Management
 ### MySQL
 
 ### MongoDB
+
+### Redis
 
 ## Operating System
 
