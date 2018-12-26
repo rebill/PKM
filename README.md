@@ -7,13 +7,15 @@ Personal Knowledge Management
 
 ### [Base](Programming/Base/README.md)
 
+### [Golang](Programming/Golang/README.md)
+
+### [Java](Programming/Java/README.md)
+
+### JavaScript
+
 ### PHP
 
 ### Python
-
-### [Golang](Programming/Golang/README.md)
-
-### JavaScript
 
 ## Mobile Development
 
