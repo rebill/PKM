@@ -26,7 +26,7 @@ of方法通过工厂方法创建Optional实例，需要注意的是传入的参�
 
 ```java
 // 给与一个非空值
-Optional<String> username = Optional.of("唯品会会员");
+Optional<String> username = Optional.of("Unknown");
 // 传入参数为null，抛出NullPointerException.
 Optional<String> nullValue = Optional.of(null);
 ```
@@ -51,7 +51,7 @@ Optional empty = Optional.ofNullable(null);
 // isPresent方法用来检查Optional实例中是否包含值
 if (username.isPresent()) {
     //在Optional实例内调用get()返回已存在的值
-    System.out.println(username.get());      //输出：唯品会会员
+    System.out.println(username.get());      //输出：Unknown
 }
 ```
 
@@ -78,7 +78,7 @@ try {
 ```java
 public static String getName(User u) {
     if (u == null)
-        return "唯品会会员";
+        return "Unknown";
     return u.name;
 }
 ```
@@ -89,7 +89,7 @@ public static String getName(User u) {
 public static String getName(User u) {
     Optional<User> user = Optional.ofNullable(u);
     if (!user.isPresent())
-        return "唯品会会员";
+        return "Unknown";
     return user.get().name;
 }
 ```
@@ -104,7 +104,7 @@ Let me Show you the code:
 public static String getName(User u) {
     return Optional.ofNullable(u)
                     .map(user->user.name)
-                    .orElse("唯品会会员");
+                    .orElse("Unknown");
 }
 ```
 
@@ -169,8 +169,8 @@ public void setName(String name) throws IllegalArgumentException {
 @Test
 public void whenOrElseWorks_thenCorrect() {
     String nullName = null;
-    String name = Optional.ofNullable(nullName).orElse("唯品会会员");
-    assertEquals("唯品会会员", name);
+    String name = Optional.ofNullable(nullName).orElse("Unknown");
+    assertEquals("Unknown", name);
 }
 ```
 
@@ -182,8 +182,8 @@ orElseGet与orElse方法类似，区别在于得到的默认值。orElse方法�
 @Test
 public void whenOrElseGetWorks_thenCorrect() {
     String nullName = null;
-    String name = Optional.ofNullable(nullName).orElseGet(() -> "唯品会会员");
-    assertEquals("唯品会会员", name);
+    String name = Optional.ofNullable(nullName).orElseGet(() -> "Unknown");
+    assertEquals("Unknown", name);
 }
 ```
 
